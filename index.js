@@ -103,97 +103,16 @@ Artist.create({
     console.log(error);
 });
 
-// Album.create({
-//     title: 'Certified Lover Boy',
-//     year: 2021,
-//     length: 86,
-//     tracks: 21
-// })
-// .then(function(newAlbum){
-//     console.log('NEW ALBUM', newAlbum.toJSON());
-// })
-// .catch(function(error) {
-//     console.log('ERROR', error);
-// });
+Album.create({
+    title: 'Love Supreme',
+    year: 1972,
+    length: 30,
+    tracks: 4
+})
+.then(function(newAlbum){
+    console.log('NEW ALBUM', newAlbum.toJSON());
+})
+.catch(function(error) {
+    console.log('ERROR', error);
+});
 
-// Artist.findOne({
-//     where: { name: 'Drake' }
-// })
-// .then(function(artist) {
-//     console.log('FOUND ARTIST', artist.toJSON());
-//     // find the album in the database (Certified Lover Boy)
-//     // --------------------------------------------
-//     Album.findOne({
-//         where: { title: 'Certified Lover Boy' }
-//     })
-//     .then(function(album) {
-//         console.log('FOUND ALBUM', album.toJSON());
-//         artist.addAlbum(album); // artistId will get added to the album
-//         artist.save(); // tell the SQL data to save the information as such....
-
-//     })
-//     .catch(function(err) {
-//         console.log('ERROR', err);
-//     })
-//     // --------------------------------------------
-// })
-// .catch(function(err) {
-//     console.log('ERROR', err);
-// });
-
-// Artist.findOne({
-//     where: { name: 'Drake' }
-// })
-// .then(function(artist) {
-//     console.log('FOUND ARTIST', artist.toJSON());
-//     // Get all ABLUMS related to the artist
-//     // --------------------------------------------
-//     artist.getAlbums()
-//     .then(function(albumList) {
-//         console.log(albumList); // find the datatype
-//     })
-//     .catch(function(err) {
-//         console.log('ERROR', err);
-//     })
-//     // --------------------------------------------
-// })
-// .catch(function(err) {
-//     console.log('ERROR', err);
-// });
-
-// // Find the artist, then create the album
-// Artist.findOne({
-//     where: { name: 'Drake' }
-// })
-// .then(function(artist) {
-//     console.log('FOUND ARTIST', artist.toJSON());
-//     // find the album in the database (Certified Lover Boy)
-//     // --------------------------------------------
-//     artist.createAlbum({
-//         title: "If You're Reading This, It's Too Late",
-//         year: 2012,
-//         tracks: 15,
-//         length: 60,
-//     })
-//     .then(function(newAlbum) {
-//         console.log('NEW ALBUM', newAlbum.toJSON());
-//     })
-//     .catch(function(err) {
-//         console.log('ERROR', err);
-//     });
-//     // --------------------------------------------
-// })
-// .catch(function(err) {
-//     console.log('ERROR', err);
-// });
-
-// Artist.findOne({
-//     where: { name: 'Drake' },
-//     include: [Album, Song]
-// })
-// .then(function(artist) {
-//     console.log('ARTIST', artist.toJSON());
-// })
-// .catch(function(err) {
-//     console.log('ERROR', err);
-// });
