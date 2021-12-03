@@ -1,5 +1,6 @@
 // Album Model: sequelize model:create --name Album --attributes title:string,year:integer,length:integer,tracks:integer
 // Artist Model: sequelize model:create --name Artist --attributes name:string,monthlyListeners:integer,followers:integer
+// Song Model: sequelize model:create --name Song --attributes title:string,length:integer,playCount:integer,likes:integer,explicit:boolean
 // Playlist Model: sequelize model:create --name Playlist --attributes name:string
 
 const express = require('express');
