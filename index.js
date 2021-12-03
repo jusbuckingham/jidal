@@ -84,24 +84,24 @@ app.get('/playlists', function (req, res) {
         });
 });
 
-// Artist.create({
-//     name: 'Drake',
-//     followers: 50_000_000,
-//     monthlyListeners: 56_021_371
-// })
-// .then(function(newArtist) {
-//     console.log('NEW ARTIST', newArtist);
-//     // Add album
-//     newArtist.createAlbum({
-//         title: 'Scary Hours'
-//     })
-//     .then(function(newAlbum) {
-//         console.log('NEW ALBUM', newAlbum.toJSON())
-//     })
-// })
-// .catch(function(error) {
-//     console.log(error);
-// });
+Artist.create({
+    name: 'John Coltrane',
+    followers: 500_000_000,
+    monthlyListeners: 560_021_371
+})
+.then(function(newArtist) {
+    console.log('NEW ARTIST', newArtist);
+    // Add album
+    newArtist.createAlbum({
+        title: 'Giant Steps'
+    })
+    .then(function(newAlbum) {
+        console.log('NEW ALBUM', newAlbum.toJSON())
+    })
+})
+.catch(function(error) {
+    console.log(error);
+});
 
 // Album.create({
 //     title: 'Certified Lover Boy',
