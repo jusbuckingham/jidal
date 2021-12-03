@@ -1,2 +1,2 @@
 # jidal
-45minsprint
+45 min sprint to make the ultmate Spotify competitor!
