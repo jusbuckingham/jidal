@@ -25,7 +25,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/index.html');
 
-    res.json({ message: "Welcome to Spotify 2.0" });
+    res.json({ message: "Jidal!" });
 });
 
 app.listen(PORT, function () {
